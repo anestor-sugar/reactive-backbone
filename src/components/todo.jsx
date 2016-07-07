@@ -41,7 +41,7 @@ define([
         render: function() {
             var title = this.props.model.get('title');
             return (
-                <li className="todoItem">
+                <li className="todoItem list-group-item">
                     { !this.state.editMode ?
                         <Checkbox onClick={this.handleToggle} checked={this.state.completed}/> : null }
                     { !this.state.editMode ? <TodoTitle title={title} completed={this.state.completed}/> : null }

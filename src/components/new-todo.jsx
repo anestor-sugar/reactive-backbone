@@ -27,11 +27,15 @@ define(['jquery', 'react', 'app/collections/todos'], function($, React, Todos) {
 
         render: function() {
             return (
-                <input
-                    type="text"
-                    id="new-todo"
-                    defaultValue={this.props.value}
-                />
+                <div>
+                    <label>New Item</label>
+                    <input
+                        type="text"
+                        id="new-todo"
+                        className="form-control"
+                        defaultValue={this.props.value}
+                    />
+                </div>
             );
         }
     });

@@ -28,6 +28,7 @@ define(['jquery', 'react'], function($, React) {
             return (
                 <input
                     type="text"
+                    className="form-control"
                     id={this.props.model.get('id')}
                     defaultValue={this.props.value}
                 />
